@@ -1,0 +1,249 @@
+/*--------------------------------
+                MAIN    
+--------------------------------*/
+.ma {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+}
+
+/* ----- CARD STATISTIQUE ----- */
+
+.card1 {
+    width: 1200px;
+    margin: 0px auto;
+    border: solid 1px #000;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cardBody {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.col1,
+.col2,
+.col3,
+.col41,
+.col42,
+.col51,
+.col52 {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.col1 {
+    grid-column: 1;
+    grid-row: 1/span 2;
+    font-size: 30px;
+}
+
+.col1 span:first-child {
+    font-size: 45px;
+}
+
+.col2 {
+    grid-column: 2;
+    grid-row: 1/span 2;
+    font-size: 30px;
+}
+
+.col2 span:first-child {
+    font-size: 45px;
+}
+
+.col3 {
+    grid-column: 3;
+    grid-row: 1/span 2;
+    font-size: 30px;
+}
+
+.col3 span:first-child {
+    font-size: 45px;
+}
+
+.col41 {
+    grid-column: 4;
+    font-size: 20px;
+}
+
+.col41 span:first-child {
+    font-size: 35px;
+}
+
+.col42 {
+    grid-column: 4;
+    grid-row: 2;
+    font-size: 20px;
+}
+
+.col42 span:first-child {
+    font-size: 35px;
+}
+
+.col51 {
+    grid-column: 5;
+    grid-row: 1;
+    font-size: 20px;
+}
+
+.col51 span:first-child {
+    font-size: 35px;
+}
+
+.col52 {
+    grid-column: 5;
+    grid-row: 2;
+    font-size: 20px;
+}
+
+.col52 span:first-child {
+    font-size: 35px;
+}
+
+/* ----- LISTE MATCH ----- */
+
+.listeMatch {
+    grid-row: 2;
+    grid-column: 2;
+    height: calc(100vh - 420px);
+    margin: 0px auto;
+    padding: 20px;
+
+}
+
+.listeMatch h1 {
+    margin: 30px 0;
+}
+
+/* .cat {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cat span {
+    font-size: 15px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 12px;
+}
+
+.cat span:first-child {
+    grid-column: 1;
+}
+
+.cat span:nth-child(2) {
+    grid-column: 2;
+}
+
+.cat span:nth-child(3) {
+    grid-column: 3;
+}
+
+.cat span:nth-child(4) {
+    grid-column: 4;
+}
+
+.cat span:last-child {
+    grid-column: 5;
+} */
+
+
+.listeBody {
+    overflow: scroll;
+    height: 300px;
+}
+
+.li1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.li1 span {
+    font-size: 16px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.li1 span:first-child {
+    grid-column: 1;
+    grid-row: 1/span 2;
+}
+
+.li1 span:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.li1 span:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.li1 span:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.li1 span:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.li1 span:nth-child(6) {
+    grid-column: 4;
+    grid-row: 1/span 2;
+}
+
+.li1 span:nth-child(7) {
+    grid-column: 5;
+    grid-row: 1/sapn 2;
+}
+
+.li1 span:last-child {
+    grid-column: 6;
+    grid-row: 1/span 2;
+}
+
+/* MENU COMPETITIONS */
+
+.menu {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.mn {
+    font-size: 35px;
+    transition: font-size 1s;
+}
+
+.mn:first-child:hover {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.mn:nth-child(3):hover {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.mn:nth-child(5):hover {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.mn:nth-child(7):hover {
+    cursor: pointer;
+    font-size: 40px;
+}

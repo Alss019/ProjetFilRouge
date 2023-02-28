@@ -1,0 +1,69 @@
+main{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: calc(100vh - 275px);
+}
+.event {
+grid-column: 1;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+width: 75%;
+justify-self: center;
+border: 2px solid black;
+border-radius: 10px;
+padding: 0;
+height: 75%;
+}
+.event h3,.stat h3{
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 35px;
+}
+.event img ,.stat img{
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+}
+.event div,.stat div{
+    grid-row: 2;
+    grid-column: 1/ span 2;
+    justify-self: center;
+    margin: 10px 0;
+}
+.event p ,.stat p{
+    text-align: center;
+    padding: 10px 0;
+}
+.stat{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 75%;
+    justify-self: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0;
+    height: 75%;
+}
+.match{
+    grid-column: 3;
+}
+.a1{
+    margin: 50px 0;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    justify-self: center;
+}
+.a2{
+    margin: 50px 0;
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    justify-self: center;
+}

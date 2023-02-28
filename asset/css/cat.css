@@ -1,0 +1,20 @@
+
+* {
+    box-sizing: border-box;
+}
+main{
+    height: calc(100vh - 100px);
+    text-align: center;
+}
+.menuCat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cat{
+    padding: 5px 10px;
+}
+.listNom{
+    font-size: 25px;
+    font-weight: 700;
+}

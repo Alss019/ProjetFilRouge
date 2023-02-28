@@ -1,0 +1,122 @@
+main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+/**/
+/*----Photo et menu profil----*/
+/**/
+.menu {
+    height: calc(100vh - 240px);
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.menu img {
+    clip-path: ellipse(50% 50%);
+    margin: 50px auto;
+}
+
+.bodyProfil {
+    margin-left: 150px;
+}
+
+.bodyProfil li {
+    margin-bottom: 5px;
+}
+
+.bodyProfil a {
+    font-size: 12px;
+    color: rgba(145, 145, 145, 0.7);
+    transition: font-size 1s;
+}
+
+.bodyProfil a:hover {
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
+
+.bodyProfil a:visited {
+    color: rgba(145, 145, 145, 0.7);
+}
+
+/* */
+/* */
+/* */
+.container {
+    height: calc(100vh - 240px);
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container h1 {
+    justify-self: start;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+
+.bodyForm {
+    display: flex;
+    justify-content: center;
+}
+
+.bodyForm form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 500px;
+    /* padding: -50px 0;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;  */
+}
+
+.bodyForm label {
+    font-size: 18px;
+}
+
+.bodyForm input {
+    align-items: center;
+    border-bottom: #000 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#desc {
+    margin-left: 0;
+}
+
+.bodyForm textarea {
+    resize: none;
+    margin: 20px 0;
+    height: 150px;
+    border: #000 2px solid;
+}
+
+#btn {
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-left: 350px;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: #000 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+p {
+    text-align: center;
+}

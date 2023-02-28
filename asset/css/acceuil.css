@@ -1,0 +1,345 @@
+main {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*------------------------------*/
+/* ---- Container Carousel ---- */
+/*------------------------------*/
+
+/* .carousel {
+    height: 12rem;
+    margin: 4rem;
+} */
+
+.carousel-calendar {
+    display: flex;
+    overflow-x: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 95%;
+    height: 100%;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    height: 149px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.carousel-item {
+    /* width: 300px; */
+    /* margin-left: 1rem; */
+    scroll-snap-align: none;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 5px 0; */
+    background-color: rgba(173, 173, 173, 0.384);
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px 0;
+    height: 95px;
+}
+
+
+
+.card-footer {
+    text-align: center;
+    background-color: rgba(173, 173, 173, 0.384);
+    border: none;
+    border-radius: 0 0 8px 8px;
+
+}
+
+/* ::-webkit-scrollbar {
+        display: none;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #3d4852;
+        border-radius: 3px;
+    } */
+
+/*---------------------------*/
+/* ---- Container Info ---- */
+/*-------------------------*/
+
+main .container-info {
+    grid-column: 1;
+    grid-row: 1 /span 2;
+}
+
+.container-info {
+    height: 600px;
+    width: 75%;
+    overflow: auto;
+    border: none;
+    padding: 1.5%;
+    margin-left: 100px;
+}
+
+.infos {
+    margin: 10px;
+}
+
+.art-header {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.art-header img {
+    border-radius: 50%;
+    grid-column: 1;
+    grid-row: 1/3;
+
+}
+
+.art-header p {
+    padding-left: 1rem;
+    grid-column: 2;
+}
+
+.art-header p:first-child {
+    font-size: 20px;
+}
+
+.art-header p:last-child {
+    font-size: 10px;
+}
+
+.art-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-info hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.container-info hr:after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+/* ---- Card Stat ---- */
+
+.card-stat {
+    grid-column: 2;
+    grid-row: 1;
+    width: 75%;
+    margin: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.034);
+    border-radius: 20px;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.267);
+    display: grid;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card-stat .footer-stat {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-stat .footer-stat a {
+    margin-right: 5%;
+    background-color: none;
+}
+
+.titre {
+    padding-left: 2rem;
+    margin-bottom: -20px;
+}
+
+/*---- .col1 ----*/
+
+
+.card-stat .col1 {
+    grid-row: 1 /4;
+    grid-column: 1;
+}
+
+.col1 p:first-child {
+    text-align: center;
+    font-size: 50px;
+}
+
+.col1 p:last-child {
+    text-align: center;
+    font-size: x-large;
+}
+
+/*---- .col2 ----*/
+
+.card-stat .col2 {
+    grid-row: 1 /4;
+    grid-column: 2;
+}
+
+.col2 p:first-child {
+    text-align: center;
+    font-size: 50px;
+}
+
+.col2 p:last-child {
+    text-align: center;
+    font-size: x-large;
+}
+
+/*---- .col3 ----*/
+
+.card-stat .col3 {
+    grid-row: 1 /4;
+    grid-column: 3;
+}
+
+.col3 p:first-child {
+    text-align: center;
+    font-size: 25px;
+}
+
+.col3 p:nth-child(2) {
+    text-align: center;
+    font-size: medium;
+}
+
+.col3 p:nth-child(3) {
+    text-align: center;
+    font-size: 25px;
+}
+
+.col3 p:last-child {
+    text-align: center;
+    font-size: medium;
+}
+
+.card-stat .body hr {
+
+    grid-column: 4;
+
+}
+
+/*---- .col4 ----*/
+
+.card-stat .col4 {
+    grid-row: 1 /4;
+    grid-column: 4;
+    margin-top: -10px;
+    margin-left: 10px;
+    /* border-left: 1px solid #000; */
+    height: 100%;
+    display: inline-block;
+
+}
+
+.col4 h2 {
+    text-align: center;
+}
+
+.col4 p:nth-child(2) {
+    text-align: center;
+    font-size: medium;
+    padding-top: 10px;
+}
+
+.col4 p:nth-child(3) {
+    text-align: center;
+    font-size: medium;
+    padding-top: 10px;
+}
+
+.col4 p:last-child {
+    text-align: center;
+    font-size: medium;
+    padding-top: 10px;
+}
+
+/* ---- Card resultat ---- */
+
+.card-resultat {
+    grid-column: 2;
+    grid-row: 2;
+    width: 75%;
+    margin: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.034);
+    border-radius: 20px;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.267);
+    /* border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 5px 2px 2px black; */
+    display: grid;
+}
+
+.card-title {
+    padding-left: 2rem;
+    margin-bottom: -20px;
+}
+
+.list li {
+    padding: 5px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 20% 15% 20%;
+}
+
+.card-resultat .footer-resultat {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-resultat .footer-resultat a {
+    margin-right: 5%;
+    background-color: none;
+}
+
+/*-------- Footer --------*/
+
+footer {
+    height: 100px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.social a {
+    padding: 30px;
+}
+
+.copyright {
+    margin-top: -15px;
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+    /* margin-bottom:0; */
+}
